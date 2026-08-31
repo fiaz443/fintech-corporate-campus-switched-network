@@ -18,10 +18,8 @@ The topology is designed with a multi-tier modular approach, focusing on perform
 ---
 
 ## 🗺️ Topology Diagram & Documentation
-(Ensure your screenshot filename matches the image name below, or use GitHub's drag-and-drop feature to insert your diagram link here)
 
-![Topology Diagram](topology.png)
-
+![FinTech Campus Topology](https://raw.githubusercontent.com/fiaz443/fintech-corporate-campus-switched-network/main/WhatsApp%20Image%202026-08-31%20at%205.09.56%20AM.jpeg)
 ---
 
 ## ⚙️ Key Configuration Highlights (Day 22 Lab Focus)
@@ -36,14 +34,14 @@ interface range GigabitEthernet0/1 - 2
 ! On Acc-SW1
 interface range GigabitEthernet0/1 - 2
  channel-group 1 mode active
-[4:53 AM, 8/31/2026] 🙂Fی@Z AحmEd 🇵🇰: ! Enable Layer 3 Routing
+ ! Enable Layer 3 Routing
 ip routing
 
 ! Configure SVI for VLAN 10 (Operations)
 interface vlan 10
  ip address 10.10.10.1 255.255.255.0
  no shutdown
-[4:53 AM, 8/31/2026] 🙂Fی@Z AحmEd 🇵🇰: ! Router configuration
+ ! Router configuration
 interface GigabitEthernet0/24
  description Link to Edge-R1 (Transit Network)
  ip address 10.10.0.1 255.255.255.252
